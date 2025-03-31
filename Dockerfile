@@ -10,7 +10,8 @@ RUN apt-get update && \
     openssh-server \
     libnss-ldapd \
     libpam-ldapd \
-    ldap-utils
+    ldap-utils \
+    tini
 
 COPY bastion.conf /etc/ssh/sshd_config.d/10-bastion.conf
 
@@ -29,4 +30,5 @@ RUN mkdir -p /run/sshd
 COPY nsswitch.conf /etc/nsswitch.conf
 COPY nslcd.conf /etc/nslcd.conf
 
-ENTRYPOINT [ "/entrypoint.sh" ]
+ENTRYPOINT [ "/usr/bin/tini" ]
+CMD [ "/etnrypoint.sh" ]
