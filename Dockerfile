@@ -31,4 +31,4 @@ COPY nsswitch.conf /etc/nsswitch.conf
 COPY nslcd.conf /etc/nslcd.conf
 
 ENTRYPOINT [ "/usr/bin/tini" ]
-CMD [ "/etnrypoint.sh" ]
+CMD [ "/entrypoint.sh" ]
