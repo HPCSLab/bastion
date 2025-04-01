@@ -2,6 +2,7 @@
 title = "sshd"
 exec = "/usr/sbin/sshd"
 args = ["-D", "-E", "/dev/stderr"]
+essential = true
 
 [[services]]
 title = "nslcd"

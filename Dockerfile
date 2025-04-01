@@ -13,7 +13,7 @@ RUN apt-get update && \
     ldap-utils \
     wget
 
-RUN wget https://github.com/namachan10777/whaleinit/releases/download/v0.0.2/whaleinit-$(uname -m)-linux-musl -O /whaleinit && \
+RUN wget https://github.com/namachan10777/whaleinit/releases/download/v0.0.3/whaleinit-$(uname -m)-linux-musl -O /whaleinit && \
     chmod 755 /whaleinit
 
 COPY bastion.conf /etc/ssh/sshd_config.d/10-bastion.conf
