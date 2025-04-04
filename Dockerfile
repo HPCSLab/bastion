@@ -11,7 +11,8 @@ RUN apt-get update && \
     libnss-ldapd \
     libpam-ldapd \
     ldap-utils \
-    wget
+    wget \
+    netcat-openbsd
 
 RUN wget https://github.com/namachan10777/whaleinit/releases/download/v0.0.3/whaleinit-$(uname -m)-linux-musl -O /whaleinit && \
     chmod 755 /whaleinit
