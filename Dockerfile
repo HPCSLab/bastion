@@ -27,6 +27,7 @@ RUN chown -R rescue:rescue /local/home/rescue/.ssh
 RUN chmod 700 /local/home/rescue/.ssh && chmod 600 /local/home/rescue/.ssh/authorized_keys
 RUN ssh-keygen -A
 RUN mkdir -p /run/sshd
+RUN echo 'work' > /etc/hostname
 
 COPY nsswitch.conf /etc/nsswitch.conf
 COPY nslcd.conf /etc/nslcd.conf
