@@ -1,3 +1,6 @@
+[[prehooks]]
+exec = "/usr/local/bin/ssh_host_keys_gen.sh"
+
 [[services]]
 title = "sshd"
 exec = "/usr/sbin/sshd"
