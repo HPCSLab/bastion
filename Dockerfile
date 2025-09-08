@@ -13,7 +13,8 @@ RUN apt-get update && \
     ldap-utils \
     wget \
     netcat-openbsd \
-    unzip
+    unzip \
+    subversion
 
 RUN wget https://github.com/namachan10777/whaleinit/releases/download/v0.0.4/whaleinit-$(uname -m)-linux-musl -O /whaleinit && \
     chmod 755 /whaleinit
