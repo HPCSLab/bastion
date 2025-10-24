@@ -19,6 +19,7 @@ touch authorized_keys
 truncate -s 0 authorized_keys
 
 for admin in "${ADMINS[@]}"; do
+  echo "genrate for $admin"
   curl "https://github.com/$admin.keys" >> authorized_keys
 done
 
