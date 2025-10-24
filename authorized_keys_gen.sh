@@ -2,7 +2,18 @@
 
 set -eux
 
-ADMINS=(namachan10777)
+ADMINS=(
+  namachan10777 # mnakano
+  onokatio # tmaruyama
+  maetin0324 # rmaeda
+  motorailgun # kourakata
+  k5342 # ksugihara
+  kotatsumuri # Shota Kawakami
+  TomoYoshida-enthityDecalture # Tomo Yoshida
+  TKSN0775 # Shunsuke Takeshima
+  UNIQabes # Takato Abe
+  shattori # Shingo Hattori
+)
 
 touch authorized_keys
 truncate -s 0 authorized_keys
